@@ -14,3 +14,6 @@ https://jti-polinema.github.io/flutter-codelab/06-layout-navigasi/#0
 
 ## Hasil Akhir
 ![Screenshot project baru](img/navigasi.gif)
+
+## TUGAS PRAKTIKUM 5 - NAVIGASI DENGAN DATA
+![Screenshot project baru](img/navigasi_data.gif)
