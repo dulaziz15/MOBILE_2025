@@ -20,11 +20,13 @@ https://jti-polinema.github.io/flutter-codelab/05-first-app-widget-dasar-flutter
 ## Praktikum 4 - Menerapkan Widget Dasar
 
 - TextWIdget
+
 ![Screenshot project baru](img/text_widget_1.png)
 ![Screenshot project baru](img/text_widget_2.png)
 ![Screenshot project baru](img/text_widget_3.png)
 
 - ImageWidget
+
 ![Screenshot project baru](img/image_widget_1.png)
 ![Screenshot project baru](img/image_widget_2.png)
 ![Screenshot project baru](img/image_widget_3.png)
@@ -33,25 +35,31 @@ https://jti-polinema.github.io/flutter-codelab/05-first-app-widget-dasar-flutter
 ## Praktikum 5 - Menerapkan Widget Material Design dan IOS Cupertino
 
 - Loading Cupertino
+
 ![Screenshot project baru](img/loading_cupertino_1.png)
 ![Screenshot project baru](img/loading_cupertino_2.png)
 
 - Floating Button Action
+
 ![Screenshot project baru](img/fab.png)
 
 - Scaffold Widget
+
 ![Screenshot project baru](img/scaffold_1.png)
 ![Screenshot project baru](img/scaffold_2.png)
 
 - Dialog Widget
+
 ![Screenshot project baru](img/dialog_1.png)
 ![Screenshot project baru](img/dialog_widget.gif)
 
 - Input dan Selection Widget
+
 ![Screenshot project baru](img/input.png)
 ![Screenshot project baru](img/text_field.gif)
 
 - Date Time Picker
+
 ![Screenshot project baru](img/date_picker.png)
 ![Screenshot project baru](img/date_picker.gif)
 
@@ -61,12 +69,16 @@ https://jti-polinema.github.io/flutter-codelab/05-first-app-widget-dasar-flutter
 ## Pecah Widget
 
 - Scaffold Widget
+
 ![Screenshot project baru](img/tugas_1.png)
 - Dialog Widget
+
 ![Screenshot project baru](img/tugas_2.png)
 - Input Selection
+
 ![Screenshot project baru](img/tugas_3.png)
 - Date Picker
+
 ![Screenshot project baru](img/tugas_4.png)
 
 ## Menggabungkan Widget
