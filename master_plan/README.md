@@ -1,16 +1,43 @@
 # master_plan
 
-A new Flutter project.
+TUGAS PRAKTIKUM 1: Dasar State dengan Model-View
+![ScreenRecord Dasar State](images/2.gif)
 
-## Getting Started
+* Maksud dari langkah 4 adalah untuk membuat barrel file
+(barrel file = file yang mengumpulkan dan mengekspor beberapa file dari satu tempat)
+Tujuan membuat barrel file untuk membuat satu file yang mengekspor seluruh model data, sehingga proses import lebih ringkas, terpusat, dan mudah dikelola seiring aplikasi tumbuh.
 
-This project is a starting point for a Flutter application.
+* Mengapa perlu variabel plan di langkah 6 pada praktikum tersebut? Mengapa dibuat konstanta ?
+Karena halaman PlanScreen memerlukan tempat untuk menyimpan dan mengelola data rencana (list task) yang akan ditampilkan di UI.
+Mengapa plan dibuat sebagai const?
+Untuk efisiensi memori
+Karena model Plan bersifat immutable atau dimaksudkan untuk immutable
+Agar state awal aman dan tidak berubah secara tidak sengaja
+Menghindari pembuatan instance yang tidak perlu
 
-A few resources to get you started if this is your first Flutter project:
+* Apa kegunaan method pada Langkah 11 dan 13 dalam lifecyle state ?
+Kegunaan initState() adalah untuk ,
+Menginisialisasi scrollController ,
+Menambah listener untuk menutup keyboard ketika scroll ,
+Dilakukan sekali ketika widget dibuat.
+Kegunaan dispose() 
+Menghapus controller untuk mencegah memory leak ,
+Membersihkan event listener , 
+Dipanggil saat widget dimusnahkan.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+TUGAS PRAKTIKUM 2 : 
+* Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+InheritedNotifier<ValueNotifier<Plan>>
+PlanProvider adalah InheritedWidget yang memiliki kemampuan notifikasi. Mengapa menggunakan InheritedNotifier, bukan InheritedWidget biasa?
+✔ Karena data Plan bersifat berubah-ubah (mutable)
+* Pada langkah 3, Mengembalikan jumlah task yang sudah complete (task.complete == true).
+Membuat string ringkasan seperti:
+-> 2 out of 3 tasks
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+TUGAS PRAKTIKUM 3 :
+![ScreenRecord Master Plane](images/1.gif)
+
+* Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+
+* Jawab: 
+Diagram tersebut menunjukkan alur navigasi dan perbedaan struktur widget antara halaman input rencana (PlanCreatorScreen) dan halaman tampilan rencana (PlanScreen). Pada sisi kiri, pengguna berada di halaman awal yang berisi TextField untuk menambah item dan ListView untuk menampilkan daftar, semuanya dibungkus dalam Column. Ketika pengguna menekan tombol untuk membuka halaman detail, Flutter melakukan Navigator.push untuk berpindah ke halaman baru (diagram kanan), yaitu PlanScreen yang memiliki struktur berbeda: menggunakan Scaffold, Column, Expanded untuk daftar, serta SafeArea untuk teks di bagian bawah. Intinya, diagram ini menjelaskan perpindahan halaman dengan Navigator serta perbedaan layout antara halaman input dan halaman detail rencana.
